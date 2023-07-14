@@ -26,7 +26,7 @@ const checkWin = () => {
     ]
     wins.forEach(e => {
         if ((boxtexts[e[0]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[0]].innerText === boxtexts[e[2]].innerText) && (boxtexts[e[0]].innerText !== "")) {
-            document.querySelector('.info').innerText = boxtexts[e[0]].innerText + " won the game";
+            document.querySelector('.info').innerText = boxtexts[e[0]].innerText + " won!!";
             isgameover = true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = '200px'
             kgf.currentTime = 0;
